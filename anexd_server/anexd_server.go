@@ -9,6 +9,7 @@ import (
 
 func main() {
 	//nil uses ["polling", "websocket"] as default string array args
+	fmt.Println("Running.")
 	server, err := socketio.NewServer(nil)
 	if err != nil {
 		log.Fatal(err)
